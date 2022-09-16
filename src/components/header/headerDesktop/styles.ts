@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import headerlogo from '../../../assets/headerLogo.svg';
 
@@ -30,6 +29,14 @@ export const HeaderLogo = styled.div`
 width: 32.93px;
 height: 32px;
 background: url(${headerlogo});
+&:hover{
+border: 2px solid rgba(222, 146, 0, 0.9);
+cursor: pointer;
+border-radius: 20px 20px 20px 20px;
+justify-content: center;
+align-items: center;
+}
+
 
 `;
 
@@ -58,10 +65,11 @@ line-height: 22px;
 letter-spacing: 1.92px;
 color: #000000;
 
+
 `;
 
-// seperated design for Chefs+Restaurants Header Item 
-export const MenuItem = styled(Link)`
+//seperated design for Chefs+Restaurants Header Item 
+export const MenuItem = styled.a`
 display:flex;
 flex-direction: row;
 gap: 32px;

@@ -7,6 +7,12 @@ import {
   HeaderDesktopMenu
 } from './styles';
 import { Link } from 'react-router-dom';
+import { MenuItem } from '../headerDesktop/styles';
+
+
+
+
+
 
 
 export default function HeaderDesktop() {
@@ -17,21 +23,21 @@ export default function HeaderDesktop() {
 
       <HeaderLeftSideContainer >
 
-        <HeaderLogo />
+      <Link to="/" ><HeaderLogo /></Link>
 
         <HeaderAppName>
           EPICURE
         </HeaderAppName>
 
         <HeaderDesktopMenu>
-          <Link to="/chefs" >Chefs</Link>
-          <Link to="/restaurants" >Restaurants</Link>
+          <MenuItem ><Link to="/chefs" >Chefs</Link></MenuItem>
+          <MenuItem ><Link to="/restaurants" >Restaurants</Link></MenuItem>
         </HeaderDesktopMenu>
 
       </HeaderLeftSideContainer>
 
-      <HeaderIcons />
-     
+      <HeaderIcons hideIcons={false} />
+
 
     </HeaderDesktopContainer>
 

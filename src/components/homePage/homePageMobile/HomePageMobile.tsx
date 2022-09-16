@@ -9,6 +9,7 @@ export default function HomePageMobile() {
       <SearchHomeBar />
 
       {/* <AboutUs /> */}
+    
     </div>
   )
 }

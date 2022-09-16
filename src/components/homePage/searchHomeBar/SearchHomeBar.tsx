@@ -14,7 +14,7 @@ export default function SearchHomeBar() {
 
   return (
     <SearchHomeBarContainer>
-      <SearchBarBackground />
+      {/* <SearchBarBackground />
       <SearchHomeBarTitleContainer>
         <SearchHomeBarTitle>
           Epicure works with the top <br />
@@ -24,7 +24,7 @@ export default function SearchHomeBar() {
           <SearchLogo></SearchLogo>
           <SearchInput type="text" placeholder='Search for restaurant cuisine, chef'></SearchInput>
         </SearchHomeBarInput>
-      </SearchHomeBarTitleContainer>
+      </SearchHomeBarTitleContainer> */}
     </SearchHomeBarContainer>
 
   )

@@ -2,13 +2,17 @@ import {
     RestaurantName,
     RestaurantImage,
     RestaurantRate,
-    RestaurantChef
+    RestaurantChef,
+    RestaurantCardContainer,
+    RestaurantDetails
 } from './styles';
+import { Rating } from 'react-simple-star-rating'
+
 
 interface Restaurant {
     RestaurantName: string;
     RestaurantImage: string;
-    RestaurantRate: string;
+    RestaurantRate: number;
     RestaurantChef: string;
 }
 
@@ -16,18 +20,41 @@ interface Restaurant {
 
 export default function RestaurantCard(props: Restaurant) {
 
-
+console.log("lkmkl;", props.RestaurantImage);
 
     return (
         <div>
+            <RestaurantCardContainer>
+
+                <RestaurantImage><img src={props.RestaurantImage} /></RestaurantImage>
+                <RestaurantDetails>
+                    <RestaurantName>{props.RestaurantName}</RestaurantName>
+                    <RestaurantChef>{props.RestaurantChef}</RestaurantChef>
 
 
-            <RestaurantImage><img src='{props.Image}' /></RestaurantImage>
-            <RestaurantRate>{props.RestaurantRate}</RestaurantRate>
-            <RestaurantChef>{props.RestaurantChef}</RestaurantChef>
-            <RestaurantName>{props.RestaurantName}</RestaurantName>
+                    <RestaurantRate>
 
+                        <Rating 
+                        initialValue={props.RestaurantRate} 
+                        ratingValue={props.RestaurantRate} 
+                        readonly={true}
+                        fillColor={"#DE9200"}
+                         emptyColor={"#E5E5E5"}
+                        style={{border:"#DE9200"}} />
+
+                    </RestaurantRate>
+                </RestaurantDetails>
+
+
+            </RestaurantCardContainer>
 
         </div>
     );
 }
+
+
+
+
+
+
+

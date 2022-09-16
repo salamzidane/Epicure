@@ -7,13 +7,10 @@ import searchLogo from '../../../assets/searchBarIcon.svg'
 export const SearchHomeBarContainer = styled.div`
 display:flex;
 justify-content:center;
-//align-items: stretch;
 flex-direction: row;
-//position: absolute;
 width: 100%;
 left: 0px;
 top: 64px;
-
 padding:36px, 126px, 36px, 126px;
 
 `;
@@ -22,16 +19,16 @@ padding:36px, 126px, 36px, 126px;
 export const SearchBarBackground=styled.div`
 width: 100%;
 height: 696px;
-position: fixed;
 background-image: url(${searchBarBackground}) ;
 background-size: 100%;
 background-repeat: no-repeat;
-
+flex-direction: row;
+position: fixed;
+min-width: 200px ;
 `;
 
 
 export const SearchHomeBarTitleContainer = styled.div`
-
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -52,6 +49,7 @@ font-size: 32px;
 line-height: 40px;
 letter-spacing: 1.97px;
 color: #000000;
+
 `;
 
 export const SearchHomeBarInput = styled.div`
@@ -65,6 +63,7 @@ width: 505px;
 height: 48px;
 border: 0.5px solid #000000;
 border-radius: 4px;
+
 `;
 
 export const SearchLogo = styled.div`
@@ -89,5 +88,5 @@ background: transparent;
 flex: none;
 order: 1;
 flex-grow: 1;
-
+flex-direction: row;
 `

@@ -5,12 +5,20 @@ import {
   HeaderIconsContainer
 } from './styles';
 
-export default function HeaderIcons() {
+
+
+interface properties {
+  hideIcons: boolean
+}
+
+
+
+export default function HeaderIcons(props:properties) {
 
 
   return (
 
-    <HeaderIconsContainer>
+    <HeaderIconsContainer MenuStatus={props.hideIcons}>
       <HeaderSearchIcon />
       <HeaderProfileIcon />
       <HeaderBagIcon />

@@ -1,29 +1,29 @@
 
 import {
-ChefImage,
-ChefName
-}from './styles';
+    ChefImage,
+    ChefName,
+    ChefCardContainer
+} from './styles';
 
 interface Chef {
-    ChefName:string;
-    ChefImage:string; }
+    ChefName: string;
+    ChefImage: string;
+}
 
 
-export default function ChefCard(props:Chef){
+export default function ChefCard(props: Chef) {
+
+    return (
+        <div>
+
+            <ChefCardContainer>
+                <ChefImage><img src={props.ChefImage} /></ChefImage>
+
+                <ChefName>{props.ChefName}</ChefName>
 
 
+            </ChefCardContainer>
 
-return(
-<div>
-
-
-<ChefImage><img src='{props.ChefImage}' /></ChefImage>
-
-<ChefName>{props.ChefName}</ChefName>
-
-
-
-
-</div>
-);
+        </div>
+    );
 }

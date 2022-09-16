@@ -3,14 +3,16 @@ import headersearchicon from '../../../assets/searchIcon.svg';
 import headerbagicon from '../../../assets/bagIcon.svg';
 import headerprofileicon from '../../../assets/profileIcon.svg';
 
-
+interface Props {
+    MenuStatus: boolean
+}
 
 
 // This include the (search+profile+bag) icons
-export const HeaderIconsContainer = styled.div`
+export const HeaderIconsContainer = styled.div<Props>`
 display:flex;
 margin-right: 5%;
-display:flex;
+display: ${(props) => props.MenuStatus ? 'none' : 'flex'};
 flex-direction: row;
 gap: 20px;
 justify-content: space-between;
