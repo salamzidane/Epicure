@@ -40,7 +40,7 @@ export default function AboutUsDesktop() {
 
 
             <AboutUsRightContainer>
-                <AboutUsDesktopLogo></AboutUsDesktopLogo>
+                <AboutUsDesktopLogo />
             </AboutUsRightContainer>
 
         </AboutUsDesktopContainer>

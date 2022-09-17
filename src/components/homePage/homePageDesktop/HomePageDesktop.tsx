@@ -7,7 +7,7 @@ export default function HomePageDesktop() {
   return (
     <div>
       <SearchHomeBar />
-      {/* <AboutUs /> */}
+      <AboutUs />
     </div>
   )
 }

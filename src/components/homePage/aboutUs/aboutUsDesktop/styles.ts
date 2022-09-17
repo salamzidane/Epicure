@@ -24,7 +24,9 @@ gap: 40px;
 `;
 
 export const AboutUsRightContainer = styled.div`
-margin-right:5%;
+margin-right:10%;
+align-items: center;
+flex-direction: column;
 
 `;
 
@@ -63,9 +65,7 @@ font-size: 20px;
 line-height: 30px;
 letter-spacing: 2.14px;
 color: #000000;
-flex: none;
-order: 1;
-flex-grow: 0;
+
 `;
 
 export const AboutUsAppleDownload = styled.a`
@@ -78,9 +78,7 @@ padding: 7px 12px;
 gap: 7px;
 width: 180px;
 height: 52px;
-flex: none;
-order: 0;
-flex-grow: 0;
+
 &:hover{
 cursor: pointer;
 }
@@ -96,9 +94,7 @@ padding: 7px 12px;
 gap: 7px;
 width: 180px;
 height: 52px;
-flex: none;
-order: 1;
-flex-grow: 0;
+
 &:hover{
 cursor: pointer;
 }
@@ -113,22 +109,14 @@ padding: 7px 12px;
 gap: 7px;
 width: 180px;
 height: 52px;
-flex: none;
-order: 0;
-flex-grow: 0;
+
 
 `;
 
 export const AboutUsDesktopLogo = styled.div`
 width: 178.22px;
 height: 166px;
-flex-direction: row;
-position: relative;
-//align-items: center;
-//justify-content: center;
-display: flex;
 background:url(${aboutUsDesktopLogo});
-
 `;
 
 
