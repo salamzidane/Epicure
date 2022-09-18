@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 
 export const AboutUsContnainer = styled.div`
-bottom:84px;
 
+bottom:84px;
 width: 100%;
 background: #FAFAFA;
-
-
+height: fit-content;
 `;

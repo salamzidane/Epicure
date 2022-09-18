@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import headerlogo from '../../../assets/headerLogo.svg';
+import headerlogo from '../../../assets/headerMobileLogo.svg';
 
 
 
@@ -56,8 +56,8 @@ height: fit-content;
 z-index: 2;
 background: #FFFFFF;
 box-shadow: 2px 4px 10px rgba(175, 175, 175, 0.25);
-position: fixed;
-top: 72px;
+position: absolute;
+top: 64px;
 left: 0px;
 `;
 

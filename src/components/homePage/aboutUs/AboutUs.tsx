@@ -13,8 +13,8 @@ export default function AboutUs() {
 
     return (
         <AboutUsContnainer>
-            {/* <AboutUsDesktop />
-            <AboutUsMobile /> */}
+            <AboutUsDesktop />
+            <AboutUsMobile />
         </AboutUsContnainer>
     )
 }

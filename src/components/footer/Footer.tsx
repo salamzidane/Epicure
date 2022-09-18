@@ -15,9 +15,9 @@ export default function Footer() {
         <div>
             
             <FooterContainer windowSize={windowSize}>
-                <FooterElement>Contact Us</FooterElement>
-                <FooterElement>Terms Of Use</FooterElement>
-                <FooterElement>Privacy Policy</FooterElement>
+                <FooterElement windowSize={windowSize}>Contact Us</FooterElement>
+                <FooterElement windowSize={windowSize}>Terms Of Use</FooterElement>
+                <FooterElement windowSize={windowSize}>Privacy Policy</FooterElement>
             </FooterContainer>
         </div>
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import headerlogo from '../../../assets/headerLogo.svg';
+import headerlogo from '../../../assets/headerDesktopLogo.svg';
 
 
 export const HeaderDesktopContainer = styled.div`

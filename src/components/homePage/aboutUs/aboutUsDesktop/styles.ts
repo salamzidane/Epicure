@@ -12,26 +12,18 @@ interface Props {
 
 export const AboutUsDesktopContainer = styled.div<Props>`
 display: ${(props) => props.windowSize > 600 ? 'flex' : 'none'};
-margin-bottom: ${(props) => props.windowSize > 600 ? '84px' : 'none'};
-background-color: #FAFAFA; 
-width: 100%;
-height:50px;
 flex-direction: row;
-padding-top: 40px;
-padding-bottom:47px;
-justify-content: space-between;
-gap: 40px;
+align-items: center;
+
 `;
 
 export const AboutUsRightContainer = styled.div`
 margin-right:10%;
-align-items: center;
-flex-direction: column;
-
+margin-left: 15%;
 `;
 
 export const AboutUsLeftContainer = styled.div`
-margin-left:5%;
+margin-left: 5%;
 `;
 
 export const AboutUsDesktopTitle = styled.div`
@@ -42,16 +34,12 @@ font-size: 20px;
 line-height: 30px;
 letter-spacing: 2.14px;
 color: #000000;
-flex: none;
-order: 1;
-flex-grow: 0;
 margin-bottom:16px;
+margin-top: 40px;
 `;
 
 export const AboutUsDesktopText = styled.div`
-height: 330px;
-width: 569px;
-flex-direction: row;
+margin-bottom: 32px;
 border-radius: nullpx;
 font-family: 'Helvetica Neue';
 font-size: 20px;
@@ -65,7 +53,6 @@ font-size: 20px;
 line-height: 30px;
 letter-spacing: 2.14px;
 color: #000000;
-
 `;
 
 export const AboutUsAppleDownload = styled.a`
@@ -73,12 +60,11 @@ background:url(${downloadApple});
 box-sizing: border-box;
 display: flex;
 flex-direction: row;
-align-items: center;
 padding: 7px 12px;
-gap: 7px;
 width: 180px;
 height: 52px;
-
+flex: none;
+order: 0;
 &:hover{
 cursor: pointer;
 }
@@ -89,28 +75,23 @@ background:url(${downloadAndroid});
 box-sizing: border-box;
 display: flex;
 flex-direction: row;
-align-items: center;
 padding: 7px 12px;
-gap: 7px;
 width: 180px;
 height: 52px;
-
+flex: none;
+order: 1;
 &:hover{
 cursor: pointer;
 }
 `;
 
 export const AboutUsDesktopDownload = styled.div`
-box-sizing: border-box;
 display: flex;
 flex-direction: row;
-align-items: center;
-padding: 7px 12px;
+margin-bottom: 47px;
 gap: 7px;
 width: 180px;
 height: 52px;
-
-
 `;
 
 export const AboutUsDesktopLogo = styled.div`
