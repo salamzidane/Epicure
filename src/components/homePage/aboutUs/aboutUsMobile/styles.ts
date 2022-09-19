@@ -26,8 +26,8 @@ font-size: 20px;
 line-height: 30px;
 letter-spacing: 2.14px;
 color: #000000;
-margin-bottom:16px;
 `;
+
 export const AboutUsMobileText=styled.div`
 display: flex;
 flex-direction: row;

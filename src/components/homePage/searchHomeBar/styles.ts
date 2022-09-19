@@ -36,7 +36,6 @@ gap:18px;
 margin-top: 11%;
 padding: 3.689vw 12.91vw;
 position: absolute;
-//top:10%;
 background: rgba(255, 255, 255, 0.88);
 `;
 

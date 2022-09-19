@@ -7,7 +7,6 @@ import {
   SearchInput,
   SearchBarBackground
 } from './styles';
-import searchBarLogo from '../../../assets/searchBarIcon.svg'
 
 
 export default function SearchHomeBar() {
