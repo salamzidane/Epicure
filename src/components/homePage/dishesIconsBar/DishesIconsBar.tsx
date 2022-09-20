@@ -5,14 +5,17 @@ import {
     VegitarianIcon,
     VeganIcon,
     DishesIconsBarTitle,
-    DishesIcons,
-    DishesCategory,
     VeganTitle,
     VegitarianTitle,
-    SpicyTitle
+    SpicyTitle,
+    DishesIconsContainer,
+    SpicyContainer,
+    VeganContainer,
+    VegitarianContainer
 } from './styles';
-
-
+import vegitarianIcon from '../../../assets/vegitarianIcon.svg';
+import spicyIcon from '../../../assets/spicyIcon.svg';
+import veganIcon from '../../../assets/veganIcon.svg';
 
 
 export default function DishesIconsBar() {
@@ -20,22 +23,29 @@ export default function DishesIconsBar() {
     const windowSize = SetWindowSize();
     return (
 
+
+
         <DishesIconsBarContainer windowSize={windowSize}>
             <DishesIconsBarTitle windowSize={windowSize}>THE MEANING OF OUR ICONS:</DishesIconsBarTitle>
 
-            <DishesIcons windowSize={windowSize}>
-                <SpicyIcon />
-                <VegitarianIcon />
-                <VeganIcon />
-            </DishesIcons>
-            <DishesCategory windowSize={windowSize}>
+            <DishesIconsContainer windowSize={windowSize}>
 
-                <SpicyTitle>Spicy</SpicyTitle>
-                <VegitarianTitle>Vegitarian</VegitarianTitle>
-                <VeganTitle>Vegan</VeganTitle>
+                <SpicyContainer windowSize={windowSize}>
+                    <SpicyIcon src={spicyIcon} windowSize={windowSize} />
+                    <SpicyTitle>Spicy</SpicyTitle>
+                </SpicyContainer>
 
-            </DishesCategory>
+                <VegitarianContainer windowSize={windowSize}>
+                    <VegitarianIcon src={vegitarianIcon} windowSize={windowSize} />
+                    <VegitarianTitle>Vegitarian</VegitarianTitle>
+                </VegitarianContainer>
 
+                <VeganContainer windowSize={windowSize}>
+                    <VeganIcon src={veganIcon} windowSize={windowSize} />
+                    <VeganTitle>Vegan</VeganTitle>
+                </VeganContainer>
+
+            </DishesIconsContainer>
 
         </DishesIconsBarContainer>
 

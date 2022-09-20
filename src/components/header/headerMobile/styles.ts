@@ -33,11 +33,7 @@ height: 32px;
 width: 32.933685302734375px;
 margin-left: 20%;
 &:hover{
-border: 2px solid rgba(222, 146, 0, 0.9);
 cursor: pointer;
-border-radius: 20px 20px 20px 20px;
-justify-content: center;
-align-items: center;
 }
 
 `;
@@ -57,7 +53,7 @@ z-index: 2;
 background: #FFFFFF;
 box-shadow: 2px 4px 10px rgba(175, 175, 175, 0.25);
 position: absolute;
-top: 64px;
+top: 62px;
 left: 0px;
 `;
 

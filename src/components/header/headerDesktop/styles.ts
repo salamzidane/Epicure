@@ -30,11 +30,7 @@ width: 32.93px;
 height: 32px;
 background: url(${headerlogo});
 &:hover{
-border: 2px solid rgba(222, 146, 0, 0.9);
 cursor: pointer;
-border-radius: 20px 20px 20px 20px;
-justify-content: center;
-align-items: center;
 }
 
 
@@ -51,7 +47,7 @@ color: #000000;
 `;
 
 //combined design for Chefs+Restaurants 
-export const HeaderDesktopMenu = styled.div`
+export const HeaderDesktopMenu = styled.a`
 display:flex;
 flex-direction: row;
 gap: 32px;
@@ -69,7 +65,7 @@ color: #000000;
 `;
 
 //seperated design for Chefs+Restaurants Header Item 
-export const MenuItem = styled.a`
+export const MenuItem = styled.div`
 display:flex;
 flex-direction: row;
 gap: 32px;

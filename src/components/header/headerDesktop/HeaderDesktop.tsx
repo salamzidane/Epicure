@@ -1,4 +1,5 @@
 import HeaderIcons from '../headerIcons/HeaderIcons';
+import { useNavigate } from 'react-router-dom';
 import {
   HeaderDesktopContainer,
   HeaderLogo,
@@ -6,7 +7,6 @@ import {
   HeaderLeftSideContainer,
   HeaderDesktopMenu
 } from './styles';
-import { Link } from 'react-router-dom';
 import { MenuItem } from '../headerDesktop/styles';
 
 
@@ -17,21 +17,22 @@ import { MenuItem } from '../headerDesktop/styles';
 
 export default function HeaderDesktop() {
 
+  const navigate = useNavigate();
 
   return (
     <HeaderDesktopContainer>
 
       <HeaderLeftSideContainer >
 
-      <Link to="/" ><HeaderLogo /></Link>
+        <HeaderLogo onClick={() => navigate("/")} />
 
         <HeaderAppName>
           EPICURE
         </HeaderAppName>
 
         <HeaderDesktopMenu>
-          <MenuItem ><Link to="/chefs" >Chefs</Link></MenuItem>
-          <MenuItem ><Link to="/restaurants" >Restaurants</Link></MenuItem>
+          <MenuItem onClick={() => navigate("/chefs")} >Chefs</MenuItem>
+          <MenuItem onClick={() => navigate("/restaurants")}>Restaurants</MenuItem>
         </HeaderDesktopMenu>
 
       </HeaderLeftSideContainer>

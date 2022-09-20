@@ -6,8 +6,7 @@ import {
     RestaurantCardContainer,
     RestaurantDetails
 } from './styles';
-import { Rating } from 'react-simple-star-rating'
-
+//import { Rating } from 'react-simple-star-rating'
 
 interface Restaurant {
     RestaurantName: string;
@@ -18,8 +17,10 @@ interface Restaurant {
 
 
 
-export default function RestaurantCard(props: Restaurant) {
 
+
+export default function RestaurantCard(props: Restaurant) {
+    
 console.log("lkmkl;", props.RestaurantImage);
 
     return (
@@ -31,16 +32,16 @@ console.log("lkmkl;", props.RestaurantImage);
                     <RestaurantName>{props.RestaurantName}</RestaurantName>
                     <RestaurantChef>{props.RestaurantChef}</RestaurantChef>
 
-
                     <RestaurantRate>
+                    {/* <RestaurantRate src='{getRate()}'> */}
 
-                        <Rating 
-                        initialValue={props.RestaurantRate} 
-                        ratingValue={props.RestaurantRate} 
-                        readonly={true}
-                        fillColor={"#DE9200"}
-                         emptyColor={"#E5E5E5"}
-                        style={{border:"#DE9200"}} />
+                        {/* <Rating 
+                        // initialValue={props.RestaurantRate} 
+                        // ratingValue={props.RestaurantRate} 
+                        // readonly={true}
+                        // fillColor={"#DE9200"}
+                        //  emptyColor={"#E5E5E5"}
+                        // style={{border:"#DE9200"}} /> */}
 
                     </RestaurantRate>
                 </RestaurantDetails>

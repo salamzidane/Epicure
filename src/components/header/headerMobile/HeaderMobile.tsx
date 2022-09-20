@@ -8,7 +8,7 @@ import {
   MenuItem
 } from './styles';
 import { Link } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 
 
 export default function HeadeMobile() {
@@ -16,6 +16,7 @@ export default function HeadeMobile() {
 
   const [showMenu, setShowMenu] = useState(false);
   const toggleShowMenu = () => { setShowMenu(!showMenu); }
+  const navigate = useNavigate();
 
 
 
@@ -27,16 +28,16 @@ export default function HeadeMobile() {
 
 
       <HeaderMenuMobileContainer MenuStatus={showMenu}>
-        <MenuItem ><Link to="/chefs" >Chefs</Link></MenuItem>
-        <MenuItem ><Link to="/restaurants" >Restaurants</Link></MenuItem>
+        <MenuItem onClick={() => navigate("/chefs")}>Chefs</MenuItem>
+        <MenuItem onClick={() => navigate("/restaurants")} >Restaurants</MenuItem>
         <MenuItem >Contact Us</MenuItem>
         <MenuItem >Terms of Use</MenuItem>
         <MenuItem >Privacy Policy</MenuItem>
 
       </HeaderMenuMobileContainer>
 
-      <Link to="/" ><HeaderLogo MenuStatus={showMenu}/></Link>
-        <HeaderIcons hideIcons={showMenu} />
+      <Link to="/" ><HeaderLogo MenuStatus={showMenu} /></Link>
+      <HeaderIcons hideIcons={showMenu} />
 
     </HeaderMobileContainer>
   )
@@ -44,4 +45,3 @@ export default function HeadeMobile() {
 
 
 
-          
