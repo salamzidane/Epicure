@@ -7,8 +7,8 @@ import {
   HeaderMenuMobileContainer,
   MenuItem
 } from './styles';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import headerLogo from '../../../assets/headerMobileLogo.svg';
 
 
 export default function HeadeMobile() {
@@ -36,7 +36,7 @@ export default function HeadeMobile() {
 
       </HeaderMenuMobileContainer>
 
-      <Link to="/" ><HeaderLogo MenuStatus={showMenu} /></Link>
+      <HeaderLogo src={headerLogo} MenuStatus={showMenu} onClick={() => navigate("/")}/>
       <HeaderIcons hideIcons={showMenu} />
 
     </HeaderMobileContainer>

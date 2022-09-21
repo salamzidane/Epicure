@@ -1,4 +1,7 @@
 import SetWindowSize from '../../../../helpers/SetWindowSize';
+import downloadApple from '../../../../assets/downloadApple.svg'
+import downloadAndroid from '../../../../assets/downloadAndroid.svg'
+import aboutUsMobileLogo from '../../../../assets/aboutUsMobileLogo.svg'
 import {
     AboutUsMobileContainer,
     AboutUsMobileTitle,
@@ -18,10 +21,10 @@ export default function AboutUsMobile() {
 
         
                <AboutUsMobileContainer windowSize={windowSize}>
-                                <AboutUsMobileLogo />
+                                <AboutUsMobileLogo src={aboutUsMobileLogo}/>
                                 <AboutUsMobileDownload>
-                    <AboutUsAndroidDownload />
-                    <AboutUsAppleDownload />
+                    <AboutUsAndroidDownload src={downloadAndroid}/>
+                    <AboutUsAppleDownload src={downloadApple}/>
                 </AboutUsMobileDownload>
 
                 <AboutUsMobileTitle>ABOUT US:</AboutUsMobileTitle>

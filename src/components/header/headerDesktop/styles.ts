@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import headerlogo from '../../../assets/headerDesktopLogo.svg';
 
 
 export const HeaderDesktopContainer = styled.div`
@@ -25,10 +24,9 @@ justify-content: space-between;
 align-items: center;
 `;
 
-export const HeaderLogo = styled.div`
+export const HeaderLogo = styled.img`
 width: 32.93px;
 height: 32px;
-background: url(${headerlogo});
 &:hover{
 cursor: pointer;
 }

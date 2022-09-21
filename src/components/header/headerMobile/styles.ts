@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import headerlogo from '../../../assets/headerMobileLogo.svg';
 
 
 
@@ -25,10 +24,9 @@ align-items: center;
 
 
 
-export const HeaderLogo = styled.div<Props>`
+export const HeaderLogo = styled.img<Props>`
 display: ${(props) => props.MenuStatus ? 'none' : 'flex'};
 justify-content: center;
-background:url(${headerlogo});
 height: 32px;
 width: 32.933685302734375px;
 margin-left: 20%;

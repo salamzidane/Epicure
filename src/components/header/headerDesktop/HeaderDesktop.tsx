@@ -8,6 +8,7 @@ import {
   HeaderDesktopMenu
 } from './styles';
 import { MenuItem } from '../headerDesktop/styles';
+import headerLogo from '../../../assets/headerDesktopLogo.svg';
 
 
 
@@ -24,7 +25,7 @@ export default function HeaderDesktop() {
 
       <HeaderLeftSideContainer >
 
-        <HeaderLogo onClick={() => navigate("/")} />
+        <HeaderLogo src={headerLogo} onClick={() => navigate("/")} />
 
         <HeaderAppName>
           EPICURE

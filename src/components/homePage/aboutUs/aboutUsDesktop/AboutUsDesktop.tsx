@@ -1,4 +1,7 @@
 import SetWindowSize from '../../../../helpers/SetWindowSize';
+import downloadApple from '../../../../assets/downloadApple.svg'
+import downloadAndroid from '../../../../assets/downloadAndroid.svg'
+import aboutUsDesktopLogo from '../../../../assets/aboutUsDesktopLogo.svg'
 import {
     AboutUsDesktopContainer,
     AboutUsDesktopTitle,
@@ -31,15 +34,15 @@ export default function AboutUsDesktop() {
                 </AboutUsDesktopText>
 
                 <AboutUsDesktopDownload>
-                    <AboutUsAndroidDownload />
-                    <AboutUsAppleDownload />
+                    <AboutUsAndroidDownload src={downloadAndroid} />
+                    <AboutUsAppleDownload src={downloadApple} />
                 </AboutUsDesktopDownload>
 
             </AboutUsLeftContainer>
 
 
             <AboutUsRightContainer>
-                <AboutUsDesktopLogo />
+                <AboutUsDesktopLogo src={aboutUsDesktopLogo} />
             </AboutUsRightContainer>
 
         </AboutUsDesktopContainer>

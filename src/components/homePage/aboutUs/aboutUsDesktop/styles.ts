@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import downloadApple from '../../../../assets/downloadApple.svg'
-import downloadAndroid from '../../../../assets/downloadAndroid.svg'
-import aboutUsDesktopLogo from '../../../../assets/aboutUsDesktopLogo.svg'
+
 
 
 
@@ -55,12 +53,10 @@ letter-spacing: 2.14px;
 color: #000000;
 `;
 
-export const AboutUsAppleDownload = styled.a`
-background:url(${downloadApple});
+export const AboutUsAppleDownload = styled.img`
 box-sizing: border-box;
 display: flex;
 flex-direction: row;
-padding: 7px 12px;
 width: 180px;
 height: 52px;
 flex: none;
@@ -70,12 +66,10 @@ cursor: pointer;
 }
 `;
 
-export const AboutUsAndroidDownload = styled.a`
-background:url(${downloadAndroid});
+export const AboutUsAndroidDownload = styled.img`
 box-sizing: border-box;
 display: flex;
 flex-direction: row;
-padding: 7px 12px;
 width: 180px;
 height: 52px;
 flex: none;
@@ -94,10 +88,9 @@ width: 180px;
 height: 52px;
 `;
 
-export const AboutUsDesktopLogo = styled.div`
+export const AboutUsDesktopLogo = styled.img`
 width: 178.22px;
 height: 166px;
-background:url(${aboutUsDesktopLogo});
 `;
 
 

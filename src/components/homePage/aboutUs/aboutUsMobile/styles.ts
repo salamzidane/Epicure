@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import downloadApple from '../../../../assets/downloadApple.svg'
-import downloadAndroid from '../../../../assets/downloadAndroid.svg'
-import aboutUsMobileLogo from '../../../../assets/aboutUsMobileLogo.svg'
+
 
 
 
@@ -17,7 +15,7 @@ margin-left: 5%;
 `;
 
 
-export const AboutUsMobileTitle=styled.div`
+export const AboutUsMobileTitle = styled.div`
 width: 100%;
 font-family: 'Helvetica Neue';
 font-style: normal;
@@ -28,7 +26,7 @@ letter-spacing: 2.14px;
 color: #000000;
 `;
 
-export const AboutUsMobileText=styled.div`
+export const AboutUsMobileText = styled.div`
 display: flex;
 flex-direction: row;
 width: 100%;
@@ -43,10 +41,8 @@ margin-bottom: 48px;
 
 `;
 
-export const AboutUsAppleDownload=styled.a`
-background:url(${downloadApple});
+export const AboutUsAppleDownload = styled.img`
 box-sizing: border-box;
-padding: 7px 12px;
 gap: 7px;
 width: 180px;
 height: 52px;
@@ -57,11 +53,8 @@ flex: none;
 cursor: pointer;
 }
 `;
-export const AboutUsAndroidDownload=styled.a`
-
-background:url(${downloadAndroid});
+export const AboutUsAndroidDownload = styled.img`
 box-sizing: border-box;
-padding: 7px 12px;
 gap: 7px;
 width: 180px;
 height: 52px;
@@ -72,7 +65,7 @@ cursor: pointer;
 }
 `;
 
-export const AboutUsMobileDownload=styled.div`
+export const AboutUsMobileDownload = styled.div`
 box-sizing: border-box;
 display: flex;
 flex-direction: column;
@@ -82,10 +75,9 @@ height: 52px;
 margin-bottom: 59.5px;
 `;
 
-export const AboutUsMobileLogo=styled.div`
+export const AboutUsMobileLogo = styled.img`
 width: 102px;
 height: 95px;
-background:url(${aboutUsMobileLogo});
 margin-top: 24px;
 `;
 

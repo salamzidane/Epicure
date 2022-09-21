@@ -4,7 +4,8 @@ import {
   SearchHomeBarTitleContainer,
   SearchHomeBarInput,
   SearchInput,
-  SearchBarBackground
+  SearchBarBackground,
+SearchHomeBarLogo
 } from './styles';
 
 
@@ -18,7 +19,8 @@ export default function SearchHomeBar() {
           Epicure works with the top <br />
           chef restaurants in Tel Aviv
         </SearchHomeBarTitle>
-        <SearchHomeBarInput>
+        <SearchHomeBarInput itemType='input'>
+          <SearchHomeBarLogo />
           <SearchInput type="text" placeholder='Search for restaurant cuisine, chef'></SearchInput>
         </SearchHomeBarInput>
       </SearchHomeBarTitleContainer>

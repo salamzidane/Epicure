@@ -14,7 +14,7 @@ export const ChefOfTheWeekMainContainer = styled.div`
 //background: #FAFAFA;
 height: fit-content;
 background-color: pink;
-
+width: 100%;
 
 
 `;
